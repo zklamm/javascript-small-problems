@@ -1,14 +1,14 @@
 function rot13(str) {
-  var rotatedStr = '';
+  var rotated = '';
   var char;
   var i;
 
   for (i = 0; i < str.length; i++) {
     char = str[i];
-    rotatedStr += (isLetter(char) ? rotate(char) : char);
+    rotated += (isLetter(char) ? rot13Char(char) : char);
   }
 
-  return rotatedStr;
+  return rotated;
 }
 
 function isLetter(char) {
@@ -17,7 +17,7 @@ function isLetter(char) {
   }
 }
 
-function rotate(char) {
+function rot13Char(char) {
   var ROTATION_DISTANCE = 13;
   var charCode;
   var rotatedChar;
