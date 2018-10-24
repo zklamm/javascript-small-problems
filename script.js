@@ -12,7 +12,7 @@ function rot13(str) {
 }
 
 function isLetter(char) {
-  (char >= 'A' && char <= 'Z') || (char >= 'a' && char <= 'z')
+  return (char >= 'A' && char <= 'Z') || (char >= 'a' && char <= 'z')
 }
 
 function rot13Char(char) {
