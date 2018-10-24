@@ -12,9 +12,7 @@ function rot13(str) {
 }
 
 function isLetter(char) {
-  if (char >= 'A' && char <= 'Z' || char >= 'a' && char <= 'z') {
-    return true;
-  }
+  (char >= 'A' && char <= 'Z') || (char >= 'a' && char <= 'z')
 }
 
 function rot13Char(char) {
@@ -22,7 +20,7 @@ function rot13Char(char) {
   var charCode;
   var rotatedChar;
 
-  if ((char >= 'A' && char <= 'M') || char >= 'a' && char <= 'm') {
+  if ((char >= 'A' && char <= 'M') || (char >= 'a' && char <= 'm')) {
     charCode = char.charCodeAt() + ROTATION_DISTANCE;
   } else {
     charCode = char.charCodeAt() - ROTATION_DISTANCE;
