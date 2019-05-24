@@ -1,0 +1,36 @@
+primitive values, types and type conversions:
+  string, number, boolean, null, undefined (symbols as of ES6)
+  have conversion page open during test
+
+variable scopes and hoisting:
+  JavaScript has lexical (or static) scoping
+  Hoisting:
+    vars: only declaration is hoisted
+    function declaration: hoists entire function, including body
+    function expression: usually part of var assignment, only var is hoisted
+    function declarations are hoisted before var declarations
+    if function dec and var have same name, var essentially becomes reassignment
+      (but the reassignment takes place where code is originally, since only declarations are hoisted)
+
+function declarations, expressions and scopes:
+  function decs create a variable of the same name, not so with func expr
+  function decs- the entire function is hoisted, not so with func expr
+  all functions create a new scope
+
+object properties and mutation:
+  properties have names and values
+    name can be any valid string
+    value can be any valid expression
+  can use dot or bracket notation
+    dot notation calls the name as a string
+    bracket notation calls the name as an expression
+
+  mutation: primitives are immutable, objects are mutable
+
+assignments and comparison (= == ===):
+  be aware of type coercion for comparing different data types
+  know strict vs non-strict equality (=== vs ==)
+
+pure functions and side effects:
+  a pure function is one that doesn't have any side effects. it also always has the same return value given the same arguments.
+  side effect: modification to external variable or mutation to objects that are passed in as an argument
